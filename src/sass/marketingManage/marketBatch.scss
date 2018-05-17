@@ -1,0 +1,41 @@
+/*created by szatpig on 2017/9/28*/
+.market-batch-container{
+  @extend .common-container;
+  .text-success{
+    color: $color-green;
+  }
+  .text-blue{
+    color: $color-blue;
+  }
+  .text-current{
+    color: $color-yellow;
+  }
+  .text-main{
+    color: $color-main;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .el-dialog__body{
+    padding-bottom: 0;
+  }
+  .el-table__expanded-cell{
+    font-size: 13px;
+    background-color: #fbf4e7;
+    color: #b72710;
+    &:hover{
+      background-color: #fbf4e7 !important;
+    }
+    .el-form-item__label{
+      color: inherit;
+      font-size: 14px;
+    }
+    .el-button.el-button--text > span {
+      color: #efaa09;
+      margin-left: 10px;
+    }
+    .export-action >span{
+       margin-left: 0 !important;
+       color: #e46905 !important;
+    }
+  }
+}

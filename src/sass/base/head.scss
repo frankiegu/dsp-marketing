@@ -1,0 +1,130 @@
+/*created by szatpig on 2017/9/26*/
+
+.header-container{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #16191c;
+  border-color: #37474f;
+  border-width: 1px 0;
+  border-bottom-color: hsla(0,0%,100%,.1);
+  color: #bfcbd9;
+  .header-logo{
+    color: #fff;
+  }
+  .header-info{
+    .img-area{
+      .logo-img{
+        margin-top: 8px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+      }
+    }
+    .information-show {
+      padding-right:5px;
+      font-size: 15px;
+      i{
+        font-size: 13px;
+      }
+    }
+    .icon-loginout{
+      color: #fff;
+      margin-left: 15px;
+    }
+  }
+  .el-badge__content.is-fixed.is-dot {
+    right: 1px;
+    top:12px;
+  }
+  .el-dropdown{
+    background-color: #212528;
+    color: #bfcbd9;
+    padding: 0 15px;
+  }
+}
+
+.message-info-container{
+  max-width: 448px;
+  li{
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 28px;
+  }
+}
+
+.role-dialog{
+  top:25% !important;
+  .el-dialog__header{
+    padding: 15px;
+    padding-bottom: 10px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .el-dialog__body{
+    padding-bottom: 13px;
+  }
+}
+.role-dialog-container{
+  .role-list{
+     display: flex;
+     display: -webkit-flex;
+     flex-flow: row wrap;
+     -webkit-flex-flow: row wrap;
+     justify-content: center;
+     -webkit-justify-content: center;
+     .role-cells{
+       width: 80px;
+       margin: 0 18px;
+       span{
+         display: block;
+         width: 80px;
+         height: 80px;
+         border: 1px solid #ccc;
+         border-radius: 50%;
+         cursor: pointer;
+         img{
+           width: 100%;
+           height: 100%;
+         }
+       }
+       i{
+         display: block;
+         width: 100%;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         line-height: 18px;
+         font-size: 12px;
+         color: #666;
+         text-align: center;
+       }
+       &:hover{
+         span{
+           border-color: $color-main;
+           border-width: 1.5px;
+         }
+         i{
+           color: $color-main;
+         }
+
+       }
+     }
+   }
+  .role-tips-button{
+    line-height: 24px;
+    margin-top: 15px;
+    padding-right: 10px;
+    text-decoration: underline;
+    color: #999;
+    font-size: 12px;
+    text-align: right;
+    &:hover{
+      color: $color-main;
+      cursor: pointer;
+    }
+  }
+}

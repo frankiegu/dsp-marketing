@@ -1,0 +1,36 @@
+/*created by szatpig on 2017/10/11*/
+.statistical-template-container{
+  @extend .common-container;
+  .editPbtn{
+
+  }
+  .el-select{
+
+  }
+  .el-input-group__prepend{width:30%;}
+  .fSelect .el-select{
+    width:100%;
+  }
+  .selctParams{
+    margin-bottom: 10px;
+  }
+  .selctParams:nth-child(1){
+    margin-left: 10px;
+  }
+  .editPbtnWrap{
+    border-top: 1px solid #ddd;
+    position: relative;
+    height:61px;
+
+    .editPbtn{
+      position:absolute;
+      right:0;
+      top:15px;
+      em{
+        color:chartreuse;
+      }
+    }
+  }
+
+  .btn-wrap{box-shadow: 0 0 1px #ddd;padding:15px;}
+}

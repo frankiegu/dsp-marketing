@@ -1,0 +1,71 @@
+/*created by szatpig on 2017/10/13*/
+.sys-url-container{
+  @extend .common-container;
+  .url-list{
+    margin: 20px;
+    .menu-manage{
+      display: flex;
+      display: -webkit-flex;
+      .url-cells{
+        flex: 1;
+        -webkit-flex: 1;
+        line-height: 30px;
+        font-size: 14px;
+        &:nth-of-type(2){
+          margin: 0 30px;
+        }
+        p.url-title{
+          margin: 0;
+          padding: 0 15px;
+          line-height: 40px;
+          background-color: #eff2f7;
+          color: #5e6d82;
+          text-align: left;
+          border-radius: 3px 3px 0 0;
+          span{
+            float: right;
+            color: #13CE66;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: bold;
+            @extend .icon-common
+          }
+        }
+        ul{
+          height: 400px;
+          border: 1px solid #eff2f7;
+          padding: 5px 0;
+          overflow-y: auto;
+          li{
+            padding: 0 15px;
+            line-height: 35px;
+            position: relative;
+            &:hover,&.active{
+              background-color: #eef1f6;
+              cursor: pointer;
+            }
+            span{
+              position: absolute;
+              top:0;
+              font-size: 13px;
+              cursor: pointer;
+              font-weight: bold;
+              @extend .icon-common;
+              &.url-cell-edit{
+                right:40px;
+                font-size: 12px;
+                color: #20A0FF;
+              }
+              &.url-cell-delete{
+                right:15px;
+                font-size: 14px;
+                color: #20A0FF;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

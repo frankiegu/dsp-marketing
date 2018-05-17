@@ -1,0 +1,40 @@
+.sms-template-container{
+  @extend .common-container;
+  .el-form-item__content{
+    .el-select{
+      width:100%;
+    }
+    .el-cascader{
+      width:100%;
+    }
+    .el-select{
+      width:100%;
+    }
+  }
+  #dataExport{
+    margin-left:20px;
+  }
+  .addparams .el-form-item__content{margin-left:5px !important;}
+  .addPbtn{
+    position:absolute;
+    right:5px;top:5px;
+  }
+  .selctParams{
+    margin-bottom: 10px;
+  }
+  .selctParams:nth-child(1){
+    margin-left: 10px;
+  }
+  .addParamsCom{
+    margin-left:10px;
+  }
+  .editPbtn{
+    position:absolute;
+    right:5px;top:50px;
+  }
+  .el-dialog__footer{
+    .el-pagination{
+      text-align: left;
+    }
+  }
+}

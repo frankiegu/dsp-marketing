@@ -1,0 +1,74 @@
+/*created by szatpig on 2018/1/30*/
+.assist-task-container{
+  @extend .common-container;
+  padding: 15px 20px 20px 20px;
+  .el-tabs__item.is-active {
+    color: $color-main;
+  }
+  .el-tabs__active-bar{
+    background-color: $color-main;
+  }
+  .el-radio__input.is-checked .el-radio__inner{
+    border-color:$color-main;
+    background: $color-main;
+  }
+  .el-radio__inner:hover {
+    border-color: $color-main;
+  }
+}
+
+.assist-check-container{
+  @extend .common-container;
+}
+
+.assist-send-container{
+  @extend .common-container;
+}
+
+.send-check-container{
+  @extend .common-container;
+  .el-radio__input.is-checked .el-radio__inner{
+    border-color:$color-main;
+    background: $color-main;
+  }
+  .el-radio__inner:hover {
+    border-color: $color-main;
+  }
+  .text-main {
+    color: #e76b5f;
+    cursor: pointer;
+  }
+  .dialog-record-list{
+    height: 40px;
+    font-size: 14px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    span:last-child{
+      line-height: 18px;
+    }
+  }
+  .dialog-record .el-dialog__body{
+    padding-top: 20px;
+  }
+}
+.dialogInfo{
+  p{
+    line-height: 35px;
+    color: #777;
+    span{
+      display: inline-block;
+      vertical-align: top;
+      &:first-child{
+        width: 30%;
+        text-align: right;
+      }
+      &:last-child{
+        width: 60%;
+        margin-left: 20px;
+        color: $color-main;
+      }
+    }
+
+  }
+}

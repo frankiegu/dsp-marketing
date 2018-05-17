@@ -1,0 +1,8 @@
+/*created by szatpig on 2017/10/11*/
+.sys-role-container{
+  @extend .common-container;
+  .hei36 input{
+    min-height: 36px !important;
+    height: auto !important;
+  }
+}

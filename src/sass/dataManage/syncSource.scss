@@ -1,0 +1,11 @@
+.sync_source-container{
+  @extend .common-container;
+  .text-main{
+    color: $color-blue;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .el-dialog__body{
+    padding-bottom: 0;
+  }
+}

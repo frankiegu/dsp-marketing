@@ -1,0 +1,10 @@
+/*created by szatpig on 2018/1/12*/
+.data-catalog-container{
+  @extend .common-container;
+
+  .text-main {
+    color: #20A0FF;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}

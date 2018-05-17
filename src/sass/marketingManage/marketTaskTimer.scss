@@ -1,0 +1,20 @@
+.market-task-timer-container{
+    @extend .common-container;
+    overflow-y: auto;
+    height: 100%;
+    .el-row{
+      height:100%;
+    }
+  .param-item-form{
+    overflow:auto;
+    white-space: nowrap;
+    max-width:900px;
+    .item-container{
+      display:inline-block;
+      text-align:center;
+      .item{
+        width:200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/*created by szatpig on 2017/11/9*/
+.upload-container{
+    position: relative;
+    .upload-group {
+        position: relative;
+        display: flex;
+        display:-webkit-flex;
+        border-collapse: separate;
+        .el-button{
+             flex:1;
+             border-radius: 4px 0 0 4px ;
+             border-right: 0;
+        }
+        .el-input{
+            flex:5;
+            border-left: 0;
+            input{
+               border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+    .upload-file{
+        width: 100%;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index: 10;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

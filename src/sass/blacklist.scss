@@ -1,0 +1,33 @@
+/*created by szatpig on 2018/3/16*/
+.black-list-container{
+  @extend .common-container;
+  overflow: hidden;
+  position: relative;
+  .set-title {
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #8391a5;
+    border-bottom: 1px solid #eee;
+  }
+  .el-row{
+    height: 100%;
+  }
+  .search-table{
+    overflow: hidden;
+    height: calc(100% - 75px);
+    .el-scrollbar{
+      .el-container__wrap{
+        height: 480px;
+      }
+    }
+  }
+  .el-tag{
+    height: 32px;
+    line-height: 30px;
+  }
+  .el-tag:not(:last-child){
+    margin-right: 12px;
+    margin-bottom: 18px;
+  }
+}

@@ -1,0 +1,56 @@
+/*created by szatpig on 2017/11/7*/
+.hdfs-explorer-container{
+  @extend .common-container;
+  padding: 20px;
+  .el-tabs__item.is-active {
+    color: $color-main;
+  }
+  .el-tabs__active-bar{
+    background-color: $color-main;
+  }
+  .el-radio__input.is-checked .el-radio__inner{
+    border-color:$color-main;
+    background: $color-main;
+  }
+  .el-radio__inner:hover {
+    border-color: $color-main;
+  }
+  .adfs-upload{
+    padding-top:30px;
+    width:460px;
+  }
+  .adfs-delete{
+    padding-top:30px;
+    width:460px;
+  }
+  .hive-table{
+    max-height: 460px;
+    overflow-y: auto;
+    .el-form{
+      margin-top:30px;
+      width:460px;
+    }
+    .hive-table-list{
+      margin-bottom: 13px;
+      &>.el-input{
+        width:50%;
+      }
+      .el-select{
+        width:34%;
+      }
+      .el-button{
+        width:12%;
+        border: 0;
+        color: $color-main;
+        margin-left: 0px;
+        &:hover{
+          color: $color-main;
+        }
+      }
+    }
+  }
+  .hive-import{
+    padding-top:30px;
+    width:460px;
+  }
+}

@@ -1,0 +1,38 @@
+/*created by szatpig on 2017/9/28*/
+.market-count-container{
+  @extend .common-container;
+  max-height: 550px;
+  overflow-y: auto;
+
+  .chartItem{
+    width:100%; height:400px;padding-top:20px;padding-right:20px;
+    canvas{
+      cursor:url("../assets/plus.ico"),auto;
+    }
+  }
+  .dialog{
+      .el-dialog__body{
+        height:680px;
+        .el-carousel{
+          height:100%;
+          .el-carousel__container{
+            height:100%;
+            .el-carousel__item{
+              height:100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+.market-count-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.market-count-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.6);
+}
